@@ -1,0 +1,21 @@
+{
+    "section": {
+        "parrafoPrincipal": "STEP 1 OF 3",
+        "titulo": "Choose the plan that’s right for you",
+        "divContenido": [
+            {
+                "icon": "<use xlink:href='#check'/>",
+                "texto": "Watch all you want. Ad-free."
+            },
+            {
+                "icon": "<use xlink:href='#check'/>",
+                "texto": "Recommendations just for you."
+            },
+            {
+                "icon": "<use xlink:href='#check'/>",
+                "texto": "Change or cancel your plan anytime."
+            }
+            
+        ]
+    }
+}
