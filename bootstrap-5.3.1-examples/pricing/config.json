@@ -16,6 +16,44 @@
                 "texto": "Change or cancel your plan anytime."
             }
             
+        ],
+        "card": [
+            {
+                "text":"Basic",
+                "precio": "$16.900",
+                "interporal": "/COP",
+                "video": "Video Quality",
+                "estadoVid": "Good",
+                "resolucion": "Resolution",
+                "estadoRes": "720p",
+                "multi": "Multi-device",
+                "estadoMulti": "Tv...",
+                "button": "Buy Basic"
+            },
+            {
+                "text":"Standard",
+                "precio": "$26.900",
+                "interporal": "/COP",
+                "video": "Video Quality",
+                "estadoVid": "Better",
+                "resolucion": "Resolution",
+                "estadoRes": "1080p",
+                "multi": "Multi-device",
+                "estadoMulti": "Tv...",
+                "button": "Buy Standard"
+            },
+            {
+                "text":"Premium",
+                "precio": "$38.900",
+                "interporal": "/COP",
+                "video": "Video Quality",
+                "estadoVid": "Best",
+                "resolucion": "Resolution",
+                "estadoRes": "4K+HDR",
+                "multi": "Multi-device",
+                "estadoMulti": "Tv...",
+                "button": "Buy Premium"
+            }
         ]
     }
 }
