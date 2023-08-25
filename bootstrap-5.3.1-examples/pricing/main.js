@@ -71,8 +71,35 @@ let fnTable = async() => {
 
   let table = document.querySelector("#table");
   table.insertAdjacentHTML("beforeend", /*html*/`
-  
+  <table class="table text-center">
+    <thead>
+      <tr>
+        ${res.section.table.estiloInfo.map((value)=>{
+          return(/*html*/` <th style="${value.estilo}">${value.info}</th>`)
+        }).join("")
+      }
+      </tr>
+    </thead>
+    <tbody>
+      ${res.section.table.datos.map((value)=>{
+        return(/*html*/`
+        <tr>
+        <th scope="row" class="text-start">${value.infoDis}</th>
+          <td>
+              <p>${value.infoText}</p>
+          </td>
+          <td>
+            <p>${value.infoTextTwo}</p>
+          </td>
+          <td>
+            <p>${value.infoTextThree}</p>
+          </td>
+        </tr>
+        `)
+      }).join("")
+    }
+    </tbody>
+  </table>
   `)
 }
 fnTable();
-
