@@ -18,17 +18,18 @@ let fnSectionOne = async() => {
     seleccion.insertAdjacentHTML("beforeend", /*html*/ ` 
     <P>${res.section.parrafoPrincipal}</P>
     <h3>${res.section.titulo} </h3>
-    ${res.section.divContenido.map((value)=>{
-      return(/*html*/`
-      <div class="">
-        <div class="">
-            ${value.icon}
-            <label for="">${value.texto}</label>
-        </div>
-      </div>
-      `)
-    }).join("")
-    }`);  
+    <div class="">
+      ${res.section.divContenido.map((value)=>{
+        return(/*html*/`
+          <div>
+              ${value.icon}
+              <label for="">${value.texto}</label>
+          </div>
+          `)
+        }).join("")
+      }
+    </div>
+    `);  
 }
 fnSectionOne();
 
@@ -62,4 +63,11 @@ let fnCards = async() => {
   }`)
 }
 fnCards();
+
+/* Funcion para crear Tables */
+let fnTable = async() => {
+  let peticion = await fetch(`${path}.json`);
+  let res = await peticion.json();
+}
+fnTable();
 
