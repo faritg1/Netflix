@@ -68,6 +68,11 @@ fnCards();
 let fnTable = async() => {
   let peticion = await fetch(`${path}.json`);
   let res = await peticion.json();
+
+  let table = document.querySelector("#table");
+  table.insertAdjacentHTML("beforeend", /*html*/`
+  
+  `)
 }
 fnTable();
 

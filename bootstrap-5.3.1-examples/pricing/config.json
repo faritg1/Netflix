@@ -56,6 +56,52 @@
                 "border": "border-primary",
                 "textDecorate": "text-bg-primary"
             }
-        ]
+        ],
+        "table":{
+            "estiloInfo":[
+                {
+                    "estilo":"width: 34%;",
+                    "info": null
+                },
+                {
+                    "estilo":"width: 22%;",
+                    "info": "Basic"
+                },
+                {
+                    "estilo":"width: 22%;",
+                    "info": "Standard"
+                },
+                {
+                    "estilo":"width: 22%;",
+                    "info": "Premium"
+                }
+            ],
+            "datos":[
+                {
+                    "infoDis": "Multi-device",
+                    "infoText": "COP16,900",
+                    "infoTextTwo": "COP26.900",
+                    "infoTextThree": "COP38,900"
+                },
+                {
+                    "infoDis": "Video Quality",
+                    "infoText": "Good",
+                    "infoTextTwo": "Better",
+                    "infoTextThree": "Best"
+                },
+                {
+                    "infoDis": "Resolution",
+                    "infoText": "720p",
+                    "infoTextTwo": "1080p",
+                    "infoTextThree": "4K+HDR"
+                },
+                {
+                    "infoDis": "Multidevice compatibility",
+                    "infoText": "<svg class='me-2' width='26' height='26' fill='red'><use xlink:href='#check'/></svg>",
+                    "infoTextTwo": "<svg class='me-2' width='26' height='26' fill='red'><use xlink:href='#check'/></svg>",
+                    "infoTextThree": "<svg class='me-2' width='26' height='26' fill='red'><use xlink:href='#check'/></svg>"
+                }
+            ]
+        }
     }
 }
