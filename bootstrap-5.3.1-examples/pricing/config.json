@@ -4,15 +4,15 @@
         "titulo": "Choose the plan that’s right for you",
         "divContenido": [
             {
-                "icon": "<use xlink:href='#check'/>",
+                "icon": "<svg class='me-2' width='26' height='26' fill='red'><use xlink:href='#check'/></svg>",
                 "texto": "Watch all you want. Ad-free."
             },
             {
-                "icon": "<use xlink:href='#check'/>",
+                "icon": "<svg class='me-2' width='26' height='26' fill='red'><use xlink:href='#check'/></svg>",
                 "texto": "Recommendations just for you."
             },
             {
-                "icon": "<use xlink:href='#check'/>",
+                "icon": "<svg class='me-2' width='26' height='26' fill='red'><use xlink:href='#check'/></svg>",
                 "texto": "Change or cancel your plan anytime."
             }
             
@@ -52,7 +52,9 @@
                 "estadoRes": "4K+HDR",
                 "multi": "Multi-device",
                 "estadoMulti": "Tv...",
-                "button": "Buy Premium"
+                "button": "Buy Premium",
+                "border": "border-primary",
+                "textDecorate": "text-bg-primary"
             }
         ]
     }
