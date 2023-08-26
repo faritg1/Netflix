@@ -28,7 +28,8 @@
                 "estadoRes": "720p",
                 "multi": "Multi-device",
                 "estadoMulti": "Tv...",
-                "button": "Buy Basic"
+                "button": "Buy Basic",
+                "textDecorate": "text-bg-primary"
             },
             {
                 "text":"Standard",
@@ -40,7 +41,8 @@
                 "estadoRes": "1080p",
                 "multi": "Multi-device",
                 "estadoMulti": "Tv...",
-                "button": "Buy Standard"
+                "button": "Buy Standard",
+                "textDecorate": "text-bg-primary"
             },
             {
                 "text":"Premium",
@@ -107,6 +109,27 @@
             "textTerm":  "HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href='#'>Terms of Use</a> for more details.",
             "textTermTwo": " Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic",
             "buttonTerm": "Next"
+        },
+        "footer": {
+            "titulo": "Questions? Call 01 800 917 1564",
+            "textFooter": [
+                {
+                    "text":"Frequent questions",
+                    "textTwo":"Privacy"
+                },
+                {
+                    "text":"Help Center",
+                    "textTwo":"Cookie preferences"
+                },
+                {
+                    "text":"netflix store",
+                    "textTwo":"Corporate information"
+                },
+                {
+                    "text":"terms of use"
+                }
+            ]
         }
+
     }
 }

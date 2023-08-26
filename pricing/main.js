@@ -105,7 +105,6 @@ let fnTable = async() => {
 fnTable();
 
 /* Funcion terminos y condiciones */
-
 let fnTerCond = async() => {
   let peticion = await fetch(`${path}.json`);
   let res = await peticion.json();
@@ -123,3 +122,26 @@ let fnTerCond = async() => {
 }
 
 fnTerCond()
+
+/* Funcion footer */
+let fnFooter = async() => {
+  let peticion = await fetch(`${path}.json`);
+  let res = await peticion.json();
+
+  let footer = document.querySelector("#footer");
+  footer.insertAdjacentHTML("beforeend",/* html */`
+    <h4 class="text-body-secondary fw-light">${res.section.footer.titulo}</h4>
+    <div class="d-flex gap-5">
+    ${res.section.footer.textFooter.map((value)=>{
+      return(/*html*/`
+      <div>
+          <p class="text-body-secondary fw-light">${value.text} </p>
+          <p class="text-body-secondary fw-light">${value.textTwo}</p>
+      </div>
+      `)
+    }).join("")
+  }
+    </div>
+  `)
+}
+fnFooter()
