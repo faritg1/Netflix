@@ -7,7 +7,7 @@
 
 /* MOSTRANDO LA INFORMACION EN JSON CON ASYNC Y AWAIT  */
 
-const path = "/pricing/config" //Declaramos el config del json
+const path = "config" //Declaramos el config del json
 
 /* Funcion para pintar primera informacion */
 let fnSectionOne = async() => {
