@@ -1,5 +1,7 @@
 {
     "section": {
+        "imgHeader":"./assets/brand/icons8-netflix.svg",
+        "textHeader":"Sign In",
         "parrafoPrincipal": "STEP 1 OF 3",
         "titulo": "Choose the plan that’s right for you",
         "divContenido": [

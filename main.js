@@ -9,6 +9,23 @@
 
 const path = "config" //Declaramos el config del json
 
+/* Funcion header */
+let fnHeader = async() => {
+  let peticion = await fetch(`${path}.json`);
+  let res = await peticion.json();
+
+  let head = document.querySelector("#header");
+  head.insertAdjacentHTML("beforeend", /* html */`
+    <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+      <img src="${res.section.imgHeader}" alt="">
+    </a>
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+      <a class="py-2 link-body-emphasis text-decoration-none" href="#">${res.section.textHeader}</a>
+    </nav>
+  `)
+} 
+fnHeader()
+
 /* Funcion para pintar primera informacion */
 let fnSectionOne = async() => {
     let peticion = await fetch(`${path}.json`);
