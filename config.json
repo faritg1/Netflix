@@ -126,7 +126,8 @@
                     "textTwo":"Corporate information"
                 },
                 {
-                    "text":"terms of use"
+                    "text":"terms of use",
+                    "textTwo":""
                 }
             ]
         }
