@@ -42,7 +42,7 @@ let fnCards = async() => {
     card.insertAdjacentHTML("beforeend", /*html*/ `
     ${res.section.card.map((value)=> {
     return (/*html*/` 
-      <div class="col">
+      <article class="col">
           <div class="card mb-4 rounded-0 shadow-sm ${value.border}">
             <div class="card-header py-3 ${value.textDecorate} ${value.border}">
               <h4 class="my-0 fw-normal">${value.text}</h4>
@@ -57,7 +57,7 @@ let fnCards = async() => {
               <button type="button" class="w-100 btn btn-lg btn-primary">${value.button}</button>
             </div>
           </div>
-        </div>
+      </article>
       `)
     }).join("")
   }`)
@@ -86,13 +86,13 @@ let fnTable = async() => {
         <tr>
         <th scope="row" class="text-start">${value.infoDis}</th>
           <td>
-              <p>${value.infoText}</p>
+              ${value.infoText}
           </td>
           <td>
-            <p>${value.infoTextTwo}</p>
+            ${value.infoTextTwo}
           </td>
           <td>
-            <p>${value.infoTextThree}</p>
+            ${value.infoTextThree}
           </td>
         </tr>
         `)
@@ -103,3 +103,23 @@ let fnTable = async() => {
   `)
 }
 fnTable();
+
+/* Funcion terminos y condiciones */
+
+let fnTerCond = async() => {
+  let peticion = await fetch(`${path}.json`);
+  let res = await peticion.json();
+
+  let terminos = document.querySelector("#termCod");
+  terminos.insertAdjacentHTML("beforeend", /* html */`
+    <p  class="text-body-secondary fw-light"> 
+    ${res.section.terminosCond.textTerm} <br> <br>
+    ${res.section.terminosCond.textTermTwo}
+    </p>
+    <div class="d-flex align-items-center justify-content-center">
+          <button type="button" class="w-50 btn btn-lg btn-primary">Next</button>
+    </div>
+  `)
+}
+
+fnTerCond()
